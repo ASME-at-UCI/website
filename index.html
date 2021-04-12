@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,700&display=swap" rel="stylesheet">
+    <!-- Bootstrap 4.5.2 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Custom jQuery script "custom-script.js" used to animate elements while scrolling-->
+    <script src="./scripts/custom-script.js"></script>
+    <!--Animate.css Library
+    WARNING: currently the animate__animated class is used with a custom script. Check the script for more info-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!--Hover.css 2.1.1 Library
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover.css"/>-->
+    <!-- FontAwesome Icons -->
+    <script src="https://kit.fontawesome.com/84dfbe2946.js" crossorigin="anonymous"></script>
+    <!-- Custom Stylesheet "custom.css" used to override previous libraries-->
+    <link rel="stylesheet" href="./syles/custom.css" type="text/css">
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+    <title>ASME at UCI</title>
+  </head>
+  <body style="">
+    <header class="">
+      <img src="./images/logo.png" alt="ASME@UCI Logo" class="c-header-logo animate__animated">
+    </header>
+
+    <!--Navigation Bar -->
+    <nav class="navbar navbar-expand-md sticky-top c-bg-grey mt-0">
+      <!--Home Button-->
+      <a class="navbar-brand far fa-circle ml-1 c-white" href="./index.html"></a>
+      <!--Collapse Navigation Toggler-->
+      <button class="c-navbar-button navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span style="color: white;"class="fas fa-bars"></span>
+      </button>
+      <!--Links-->
+      <div class="flex-row-reverse collapse navbar-collapse c-white" id="collapsibleNavbar">
+        <ul class="navbar-nav mr-3 mt-2 mt-md-0">
+          <li class="nav-item mx-2">
+            <a class="c-white nav-link animate__animated animate__fast" href="./index.html#join">
+              Join Us
+            </a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="c-white nav-link animate__animated animate__fast" href="./events.html">Events</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="c-white nav-link animate__animated animate__fast" href="./officers.html">Officers</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="c-white nav-link animate__animated animate__fast" href="./index.html#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!--Image Carousel-->
+    <div id="slide" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ul class="carousel-indicators">
+        <li data-target="#slide" data-slide-to="0" class="active"></li>
+        <li data-target="#slide" data-slide-to="1"></li>
+        <li data-target="#slide" data-slide-to="2"></li>
+      </ul>
+      <!-- The slideshow -->
+      <div class="carousel-inner">
+        <div class="carousel-caption">
+          <!--Caption Content Goes Here-->
+        </div>
+        <div class="carousel-item active">
+          <img src="./images/carousel-r1.jpg" alt="UCI Engineering Building" style="width:100%;">
+        </div>
+        <div class="carousel-item">
+          <img src="./images/carousel-r2.jpg" alt="Mountains" style="width:100%;">
+        </div>
+        <div class="carousel-item">
+          <img src="./images/carousel-r3.jpg" alt="Lighthouse" style="width:100%;">
+        </div>
+      </div>
+      <!-- Controls -->
+      <a class="carousel-control-prev" href="#slide" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#slide" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+
+    <!--Triangle Divider-->
+    <div id="c-triangle-holder">
+      <div id="c-triangle-2"></div>
+      <div id="c-triangle-1"></div>
+    </div>
+
+    <!--About-->
+    <div style="" class="c-tile p-5 container">
+        <h2 class="p-0 mx-auto animate__animated" style="text-align: center;">
+          The American Society of Mechanical Engineers at UCI
+        </h2>
+        <p style="font-size: 1.3rem;" class="animate__animated py-5">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+          dolore eu fugiat nulla pariatur.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+          dolore eu fugiat nulla pariatur.
+        </p>
+        <hr class="animate__animated my-5">
+        <h2 style="text-align: center;" class="animate__animated pt-5">Meeting Info</h2>
+        <div class="row c-black c-bold">
+          <div class="animate__animated p-5 col-md-4 text-center">
+            <span class="c-lg-icon far fa-calendar-alt"></span>
+            <p class="pt-5">Meetings every Monday</p>
+          </div>
+          <div class="animate__animated p-5 col-md-4 text-center">
+            <span class="c-lg-icon far fa-clock"></span>
+            <p class="pt-5">6:30 PM PST</p>
+          </div>
+          <div class="animate__animated p-5 col-md-4 text-center">
+              <span class="c-lg-icon far fa-map"></span>
+              <p class="pt-5">Some Place, Building @ UCI</p>
+          </div>
+      </div>
+    </div>
+
+    <!--"Join Us"/Newsletter Form-->
+    <div id="join" class="c-img-background c-lg-tile">
+      <div id="join-us" class="animate__animated c-tile c-background-primary container p-5 d-flex flex-column">
+      <!--Title-->
+        <div class="d-flex">
+          <div>
+            <h1>Join Us</h1>
+            <p>Sign Up for the Newsletter</p>
+          </div>
+          <span style="color: white; font-size: 5rem;" class="fas fa-envelope-open-text my-auto ml-auto mr-0"></span>
+        </div>
+      <!--Sign Up Form-->
+        <div class="mt-5">
+          <form action="/action_page.php">
+            <div class="form-group">
+              <label for="email">Name:</label>
+              <input type="text" class="form-control" placeholder="Enter name" id="name">
+            </div>
+            <div class="form-group">
+              <label for="email">Email address:</label>
+              <input type="email" class="form-control" placeholder="Enter email" id="email">
+            </div>
+            <button type="submit" class="btn btn-primary mt-4">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!--Social Media Links-->
+    <div id="contact" class="c-tile p-5 container">
+        <h2 class="animate__animated p-0 mx-auto" style="text-align: center;">
+          Follow Us
+        </h2>
+        <div class="animate__animated row c-black c-bold">
+          <div class="p-5 col-sm-4 text-center">
+            <a class="c-md-icon fab fa-facebook hvr-float"></a>
+            <p class="pt-3">Facebook</p>
+          </div>
+          <div class="animate__animated p-5 col-sm-4 text-center">
+            <a class="c-md-icon fab fa-instagram hvr-float"></a>
+            <p class="pt-3">Instagram</p>
+          </div>
+          <div class="animate__animated p-5 col-sm-4 text-center">
+              <a href="https://discord.gg/cCDewyaFs8" class="c-md-icon fab fa-discord hvr-float"></a>
+              <p class="pt-3">Discord</p>
+          </div>
+      </div>
+    </div>
+    <!--Image Gallery -->
+
+    <footer style="text-align: center; width: 100%; padding-top: 100px; padding-bottom: 50px;">
+       <span>Prototype created by Benjamen Bielecki. Copyright © 2021 The American Society of Mechanical Engineers, UC Irvine Chapter. All Rights Reserved.<span>
+    </footer>
+  </body>
+</html>
+
+<!--Inline troubleshooting: style="border-style: solid; border-width: 2px; outline-style: solid; outline-width: 2px;" -->
