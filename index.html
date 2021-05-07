@@ -25,9 +25,10 @@
     <link rel="stylesheet" href="./syles/custom.css" type="text/css">
     <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
     <title>ASME at UCI</title>
+    <link rel="icon" href="./images/logo-favicon.png">
   </head>
   <body style="">
-    <header class="">
+    <header class="p-5">
       <img src="./images/logo.png" alt="ASME@UCI Logo" class="c-header-logo animate__animated">
     </header>
 
@@ -74,13 +75,13 @@
           <!--Caption Content Goes Here-->
         </div>
         <div class="carousel-item active">
-          <img src="./images/carousel-r1.jpg" alt="UCI Engineering Building" style="width:100%;">
+          <img src="./images/carousel-1.jpg" alt="UCI Engineering Building" style="width:100%;">
         </div>
         <div class="carousel-item">
-          <img src="./images/carousel-r2.jpg" alt="Mountains" style="width:100%;">
+          <img src="./images/carousel-2.jpg" alt="Mountains" style="width:100%;">
         </div>
         <div class="carousel-item">
-          <img src="./images/carousel-r3.jpg" alt="Lighthouse" style="width:100%;">
+          <img src="./images/carousel-r1.jpg" alt="Lighthouse" style="width:100%;">
         </div>
       </div>
       <!-- Controls -->
@@ -101,41 +102,36 @@
     <!--About-->
     <div style="" class="c-tile p-5 container">
         <h2 class="p-0 mx-auto animate__animated" style="text-align: center;">
-          The American Society of Mechanical Engineers at UCI
+          The American Society of Mechanical Engineers @ UCI
         </h2>
-        <p style="font-size: 1.3rem;" class="animate__animated py-5">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-          dolore eu fugiat nulla pariatur.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-          dolore eu fugiat nulla pariatur.
+        <p style="font-size: 1.35rem; line-height: 2.5rem;" class="animate__animated py-5">
+          We're a community of students dedicated to learning and collaborating
+          in all things engineering. The campus organization hosts events ranging from competitions to
+          networking nights. Whether you want to show off your skills in competitive events or meet with
+          professionals in the tech world, ASME is a home to anyone with a passion
+          for science and engineering.
         </p>
         <hr class="animate__animated my-5">
         <h2 style="text-align: center;" class="animate__animated pt-5">Meeting Info</h2>
         <div class="row c-black c-bold">
           <div class="animate__animated p-5 col-md-4 text-center">
             <span class="c-lg-icon far fa-calendar-alt"></span>
-            <p class="pt-5">Meetings every Monday</p>
+            <p class="pt-5">Every other Tuesday</p>
           </div>
           <div class="animate__animated p-5 col-md-4 text-center">
             <span class="c-lg-icon far fa-clock"></span>
-            <p class="pt-5">6:30 PM PST</p>
+            <p class="pt-5">8:00 - 9:00 PM PST</p>
           </div>
           <div class="animate__animated p-5 col-md-4 text-center">
               <span class="c-lg-icon far fa-map"></span>
-              <p class="pt-5">Some Place, Building @ UCI</p>
+              <p class="pt-5">Zoom</p>
           </div>
       </div>
     </div>
 
     <!--"Join Us"/Newsletter Form-->
     <div id="join" class="c-img-background c-lg-tile">
-      <div id="join-us" class="animate__animated c-tile c-background-primary container p-5 d-flex flex-column">
+      <div id="join-us" class="animate__animated c-tile c-background-primary container  d-flex flex-column">
       <!--Title-->
         <div class="d-flex">
           <div>
@@ -145,21 +141,50 @@
           <span style="color: white; font-size: 5rem;" class="fas fa-envelope-open-text my-auto ml-auto mr-0"></span>
         </div>
       <!--Sign Up Form-->
-        <div class="mt-5">
-          <form action="/action_page.php">
-            <div class="form-group">
-              <label for="email">Name:</label>
-              <input type="text" class="form-control" placeholder="Enter name" id="name">
+      <!--
+      <div class="mt-5">
+        <form action="/action_page.php">
+          <div class="form-group">
+            <label for="email">Name:</label>
+            <input type="text" class="form-control" placeholder="Enter name" id="name">
+          </div>
+          <div class="form-group">
+            <label for="email">Email address:</label>
+            <input type="email" class="form-control" placeholder="Enter email" id="email">
+          </div>
+          <button type="submit" class="btn btn-primary mt-4">Submit</button>
+        </form>
+        -->
+          <!-- Begin Mailchimp Signup Form -->
+          <div id="mc_embed_signup" class="mt-5">
+          <form action="https://asmeuci.us1.list-manage.com/subscribe/post?u=946be379e994a69582a86839c&amp;id=3f5dcbf8b2" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <div id="mc_embed_signup_scroll">
+              <div class="form-group mc-field-group">
+              	<!--<label for="mce-EMAIL">Email Address</label>-->
+              	<input type="email" value="" name="EMAIL" class="form-control required email" id="mce-EMAIL" placeholder="Email Address" >
+              </div>
+              <div class="form-group mc-field-group">
+              	<!--<label for="mce-FNAME">First Name </label>-->
+              	<input type="text" value="" name="FNAME" class="form-control" id="mce-FNAME" placeholder="First Name">
+              </div>
+              <div class="form-group mc-field-group">
+              	<!--<label for="mce-LNAME">Last Name </label>-->
+              	<input type="text" value="" name="LNAME" class="form-control" id="mce-LNAME" placeholder="Last Name">
+              </div>
+            	<div id="mce-responses" class="clear">
+            		<div class="response" id="mce-error-response" style="display:none"></div>
+            		<div class="response" id="mce-success-response" style="display:none"></div>
+            	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+              <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_946be379e994a69582a86839c_3f5dcbf8b2" tabindex="-1" value=""></div>
+              <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary mt-4 button"></div>
             </div>
-            <div class="form-group">
-              <label for="email">Email address:</label>
-              <input type="email" class="form-control" placeholder="Enter email" id="email">
-            </div>
-            <button type="submit" class="btn btn-primary mt-4">Submit</button>
           </form>
+          </div>
+          <!--End mc_embed_signup-->
         </div>
       </div>
     </div>
+
     <!--Social Media Links-->
     <div id="contact" class="c-tile p-5 container">
         <h2 class="animate__animated p-0 mx-auto" style="text-align: center;">
@@ -167,15 +192,15 @@
         </h2>
         <div class="animate__animated row c-black c-bold">
           <div class="p-5 col-sm-4 text-center">
-            <a class="c-md-icon fab fa-facebook hvr-float"></a>
+            <a class="c-md-icon fab fa-facebook hvr-float" href="https://www.facebook.com/American-Society-of-Mechanical-Engineers-at-UCI-103751025187023"></a>
             <p class="pt-3">Facebook</p>
           </div>
           <div class="animate__animated p-5 col-sm-4 text-center">
-            <a class="c-md-icon fab fa-instagram hvr-float"></a>
+            <a href="https://www.instagram.com/asme.at.uci/"  class="c-md-icon fab fa-instagram hvr-float"></a>
             <p class="pt-3">Instagram</p>
           </div>
           <div class="animate__animated p-5 col-sm-4 text-center">
-              <a href="https://discord.gg/cCDewyaFs8" class="c-md-icon fab fa-discord hvr-float"></a>
+              <a href="https://discord.gg/pvxJHTkduP" class="c-md-icon fab fa-discord hvr-float"></a>
               <p class="pt-3">Discord</p>
           </div>
       </div>
@@ -183,7 +208,8 @@
     <!--Image Gallery -->
 
     <footer style="text-align: center; width: 100%; padding-top: 100px; padding-bottom: 50px;">
-       <span>Prototype created by Benjamen Bielecki. Copyright © 2021 The American Society of Mechanical Engineers, UC Irvine Chapter. All Rights Reserved.<span>
+       <span>Created by Benjamen Bielecki. Copyright © 2021 The American Society of Mechanical Engineers, UC Irvine Chapter. All Rights Reserved.
+         <br>"Technical Drawing" by Andrew* is licensed under CC BY-SA 2.0<span>
     </footer>
   </body>
 </html>
