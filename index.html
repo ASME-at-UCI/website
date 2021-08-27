@@ -1,116 +1,184 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <!--Fonts-->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,700&display=swap" rel="stylesheet">
-    <!-- Bootstrap 4.5.2 -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <!-- Popper JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <!-- Custom jQuery script "custom-script.js" used to animate elements while scrolling-->
-    <script src="./scripts/custom-script.js"></script>
-    <!--Animate.css Library
-    WARNING: currently the animate__animated class is used with a custom script. Check the script for more info-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <!--Hover.css 2.1.1 Library
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover.css"/>-->
-    <!-- FontAwesome Icons -->
-    <script src="https://kit.fontawesome.com/84dfbe2946.js" crossorigin="anonymous"></script>
-    <!-- Custom Stylesheet "custom.css" used to override previous libraries-->
-    <link rel="stylesheet" href="./syles/custom.css" type="text/css">
-    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
-    <title>ASME at UCI</title>
-    <link rel="icon" href="./images/logo-favicon.png">
-  </head>
-  <body style="">
-    <header class="p-5">
-      <img src="./images/logo.png" alt="ASME@UCI Logo" class="c-header-logo animate__animated">
-    </header>
+	<head>
+		<!--Fonts-->
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,700&display=swap" rel="stylesheet">
+		<!-- Bootstrap 4.5.2 -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<!-- Popper JS -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="https://apis.google.com/js/api.js"></script>
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+		<!-- Custom jQuery script "custom-script.js" used to animate elements while scrolling-->
+		<script src="./scripts/custom-script.js"></script>
+		<!-- Custom jQuery script "custom-script.js" used to animate elements while scrolling-->
+		<script src="./scripts/calendar-updates.js"></script>
+		<!--Animate.css Library
+		WARNING: currently the animate__animated class is used with a custom script. Check the script for more info-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+		<!--Hover.css 2.1.1 Library
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover.css"/>-->
+		<!-- FontAwesome Icons -->
+		<script src="https://kit.fontawesome.com/84dfbe2946.js" crossorigin="anonymous"></script>
+		<!-- Custom Stylesheet "custom.css" used to override previous libraries-->
+		<link rel="stylesheet" href="./syles/custom.css" type="text/css">
+		<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+		<title>ASME at UCI</title>
+		<link rel="icon" href="./images/gears-favicon.png">
+		<!-- FullCalendar.io JS -->
+    	<script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.5.1/locales-all.min.js"></script>
+    	<script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.5.1/main.min.js"></script>
+    	<!-- FullCalendar.io CSS -->
+    	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@5.5.1/main.min.css">
+    	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+    	<script>
+		  document.addEventListener('DOMContentLoaded', function() {
+			var calendarEl = document.getElementById('calendar');
+			var calendar = new FullCalendar.Calendar(calendarEl, {
+			  initialView: 'dayGridMonth'
+			});
+			calendar.render();
+		  });
+    	</script>
+	</head>
+	
+<body style="">
+		
+	<!--Navigation Bar -->
+	<nav class="navbar navbar-expand-md c-bg-grey mt-0 py-4" >
+		<!--Home Button
+		<a class="navbar-brand far fa-circle ml-1 c-white" href="./index.html"></a>-->	
+		<a class="navbar-brand" href=""> 
+			<img src="images/new-logo.png" alt="" height="60px"> 
+		</a>
+		<!--Collapse Navigation Toggler-->
+		<button class="c-navbar-button navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+		<span style="color: rgb(50, 0, 143); font-size:2rem;" class="fas fa-bars"></span>
+		</button>
+		<!--Links-->
+		<div class="collapse navbar-collapse flex-row-reverse c-white" id="collapsibleNavbar"> 
+			<ul class="navbar-nav mt-md-0">
+				<li class="nav-item animate__animated animate__fast">
+					<a class="nav-link " href="./index.html#join">Join Us</a>
+				</li>
+				<li class="nav-item animate__animated animate__fast">
+					<a class="nav-link" href="./events.html">Events</a>
+				</li>
+				<li class="nav-item animate__animated animate__fast">
+					<a class="nav-link" href="./officers.html">Officers</a>
+				</li>
+				<li class="nav-item animate__animated animate__fast">
+					<a class="nav-link" href="./index.html#contact">Contact</a>
+				</li>
+			</ul>	 
+		</div>
+	</nav>
+	
+	
+	<div class="">
+	  <!--Image Carousel src=https://azmind.com/bootstrap-carousel-multiple-items/-->
+		<div id="headlines" class="main-carousel mb-5 carousel slide" data-ride="carousel" >
 
-    <!--Navigation Bar -->
-    <nav class="navbar navbar-expand-md sticky-top c-bg-grey mt-0">
-      <!--Home Button-->
-      <a class="navbar-brand far fa-circle ml-1 c-white" href="./index.html"></a>
-      <!--Collapse Navigation Toggler-->
-      <button class="c-navbar-button navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-        <span style="color: white;"class="fas fa-bars"></span>
-      </button>
-      <!--Links-->
-      <div class="flex-row-reverse collapse navbar-collapse c-white" id="collapsibleNavbar">
-        <ul class="navbar-nav mr-3 mt-2 mt-md-0">
-          <li class="nav-item mx-2">
-            <a class="c-white nav-link animate__animated animate__fast" href="./index.html#join">
-              Join Us
-            </a>
-          </li>
-          <li class="nav-item mx-2">
-            <a class="c-white nav-link animate__animated animate__fast" href="./events.html">Events</a>
-          </li>
-          <li class="nav-item mx-2">
-            <a class="c-white nav-link animate__animated animate__fast" href="./officers.html">Officers</a>
-          </li>
-          <li class="nav-item mx-2">
-            <a class="c-white nav-link animate__animated animate__fast" href="./index.html#contact">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+		  <!-- Indicators -->
+			<ul class="carousel-indicators">
+				<li data-target="#headlines" data-slide-to="0" class="active"></li>
+				<li data-target="#headlines" data-slide-to="1"></li>
+				<li data-target="#headlines" data-slide-to="2"></li>
+		  	</ul>
 
-    <!--Image Carousel-->
-    <div id="slide" class="carousel slide" data-ride="carousel">
-      <!-- Indicators -->
-      <ul class="carousel-indicators">
-        <li data-target="#slide" data-slide-to="0" class="active"></li>
-        <li data-target="#slide" data-slide-to="1"></li>
-        <li data-target="#slide" data-slide-to="2"></li>
-      </ul>
-      <!-- The slideshow -->
-      <div class="carousel-inner">
-        <div class="carousel-caption">
-          <!--Caption Content Goes Here-->
-        </div>
-        <div class="carousel-item active">
-          <img src="./images/carousel-1.jpg" alt="UCI Engineering Building" style="width:100%;">
-        </div>
-        <div class="carousel-item">
-          <img src="./images/carousel-2.jpg" alt="Mountains" style="width:100%;">
-        </div>
-        <div class="carousel-item">
-          <img src="./images/carousel-r1.jpg" alt="Lighthouse" style="width:100%;">
-        </div>
-      </div>
-      <!-- Controls -->
-      <a class="carousel-control-prev" href="#slide" data-slide="prev">
-        <span class="carousel-control-prev-icon"></span>
-      </a>
-      <a class="carousel-control-next" href="#slide" data-slide="next">
-        <span class="carousel-control-next-icon"></span>
-      </a>
-    </div>
+		  <!-- The slideshow -->
+	  		<div class="carousel-inner">
+				<div class="carousel-item active" style="background: rgb(0,68,168); background: linear-gradient(9deg, rgba(0,68,168,1) 0%, rgba(57,174,255,1) 44%, rgba(181,220,255,1) 100%);">
+					<div class="carousel-item-content">
+						<div class="d-flex flex-column">
+							<h2 style="font-size: 4rem;" class="c-white animate__animated">We're Back!</h2>
+							<p style="font-size: 1.5rem; line-height: 2.5rem;" class="c-white animate__animated">
+							  The American Society of Mechanical Engineers has returned to UCI, and we're planning 
+								exciting new events and programs for students to take part in.
+							</p>
+						</div>
+						<img class="animate__animated" src="images/partly-cloudy.png" alt="Sun Peeking out of the Clouds" height="auto" width="580px">
+					</div>
+				</div>
+				<div class="carousel-item"  style="background: #FFCF44;">
+					<div class="carousel-item-content">
+						<div class="d-flex flex-column">
+							<h2 style="font-size: 4rem;" class="animate__animated">Sign Up</h2>
+							<p style="font-size: 1.5rem; line-height: 2.5rem;" class="animate__animated">
+							  Go to our <a href="">UCI Campusgroups page</a> and officially join our club!
+							</p>
+						</div>
+						<img class="animate__animated" style="float: none;" src="images/form.png" alt="Form" height="400px">
+					</div>
+				</div>
+				<div class="carousel-item" style=" background: black;">
+			  		<div  class="flex-column carousel-item-content-vertical">
+						<div class="d-flex flex-column text-center">
+							<h2 style="font-size: 4rem;" class="c-white animate__animated">Interested in Projects?</h2>
+							<p style="font-size: 1.5rem; line-height: 2.5rem;" class="c-white animate__animated">
+							  Learn about our projects like <a href="">Fiat Lux</a> and how you can get involved.
+							</p>
+						</div>
+						<img class="animate__animated" src="images/fiat-lux.png" alt="Form" width="66%">
+					</div>
+				</div>
+		  	</div>
+			
+		  <!-- Left and right controls -->
+		  <a class="carousel-control-prev" href="#headlines" data-slide="prev">
+			<span class="carousel-control-prev-icon"></span>
+		  </a>
+		  <a class="carousel-control-next" href="#headlines" data-slide="next">
+			<span class="carousel-control-next-icon"></span>
+		  </a>
+			
+		</div>
+	</div>
+	
+	
+	 <!--Event Board-->
+	<div class="py-5 ">
+		<div id="google-calendar-cards" class="container py-5" style="text-align: center;">
+	  	<h2 class="animate__animated p-0 mx-auto" style="text-align: center;">
+			Upcoming Events
+	  	</h2>
 
-    <!--Triangle Divider-->
-    <div id="c-triangle-holder">
-      <div id="c-triangle-2"></div>
-      <div id="c-triangle-1"></div>
-    </div>
+	  	<div class="animate__animated card c-event-card ">
+			<div class="card-body ">
+		  	<h4 class="card-title">
+				End of the World - After Party
+				<span class="badge c-new-badge">New</span> 
+				<i data-toggle="collapse" data-target="#demo" class="fas fa-angle-down"></i>
+			</h4>
+				<div class="card-text">
+					Wednesday, June 16th, 2021
+				</div>
+				<div id="demo" class="collapse">				
+					<br>	
+					Lorem ipsum dolor text....
+				</div>
+			</div>
+										
+		  </div>
 
+		</div>
+
+		<!--Event Calendar-->
+		<div class="container py-5" style="text-align: center;">
+		  <h2 class="animate__animated py-2 mx-auto" style="text-align: center;">
+			Event Calendar
+		  </h2>
+		  <div id="calendar" class="animate__animated pt-5"></div>
+		</div>
+	</div>
+     
     <!--About-->
-    <div style="" class="c-tile p-5 container">
-        <h2 class="p-0 mx-auto animate__animated" style="text-align: center;">
-          The American Society of Mechanical Engineers @ UCI
-        </h2>
-        <p style="font-size: 1.35rem; line-height: 2.5rem;" class="animate__animated py-5">
-          We're a community of students dedicated to learning and collaborating
-          in all things engineering. The campus organization hosts events ranging from competitions to
-          networking nights. Whether you want to show off your skills in competitive events or meet with
-          professionals in the tech world, ASME is a home to anyone with a passion
-          for science and engineering.
-        </p>
+    <div style="background: rgb(12,0,36); background: linear-gradient(332deg, rgba(12,0,36,1) 0%, rgba(45,9,121,1) 39%, rgba(0,212,255,1) 100%);" class="c-tile p-5 container">
+        
         <hr class="animate__animated my-5">
         <h2 style="text-align: center;" class="animate__animated pt-5">Meeting Info</h2>
         <div class="row c-black c-bold">

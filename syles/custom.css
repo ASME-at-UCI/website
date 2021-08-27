@@ -1,12 +1,15 @@
 
 :root {
   /** Global Variables **/
-  --primary-color:  rgba(21,116,189,0.95);
-  --primary-color-dark:  rgba(9,42,67,0.95);
+  --primary-color:  rgba(0,174, 239, 0.95);
+  --primary-color-dark:  rgba(28,117,188,0.95);
   --primary-color-light:  rgba(59,164,245,0.95);
-  --secondary-color: gray;
+  --secondary-color: rgba(240, 240, 240, 1);
   --primary-text-color: #616161;
   --secondary-text-color: darkgray;
+  --purple: rgb(35, 0, 102);
+	
+	scroll-behavior: smooth;
 }
 
 body {
@@ -22,6 +25,10 @@ body {
 h2 {
   font-weight: 400;
   color:black;
+}
+
+.c-white {
+	color: white;
 }
 
 .c-lg-icon {
@@ -56,8 +63,8 @@ h2 {
 }
 
 .c-navbar-button:enabled {
-  border-style = none;
-  outline-style = none;
+  border-style: none;
+  outline-style: none;
   border-width: 0px;
   outline-width: 0px;
 }
@@ -95,7 +102,7 @@ h4.c-contact-card {
   margin-top: 1.5rem;
   max-width: 100%;
   font-size: 1rem;
-  border-radius: 1px;
+  border-radius: 15px;
   text-align: left;
 }
 
@@ -157,6 +164,115 @@ header {
 
 
 
+/* Carousel (in conjunction with Bootstrap styles) */
+
+.main-carousel {
+	height: 800px;
+	width: 1700px;
+	margin-left: auto !important;
+	margin-right: auto !important;
+	background: var(--secondary-color);
+	border-radius: 30px;
+	overflow: hidden;
+}
+
+@media only screen and (max-width: 1800px){
+	.main-carousel {
+		width: 95%;
+	}
+}
+
+@media only screen and (max-width: 1500px){
+	.main-carousel {
+		height: 800px;
+	}
+}
+
+@media only screen and (max-width: 768px){
+	.main-carousel {
+		height: 900px;
+	}
+}
+
+
+.carousel-item-content {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+
+.carousel-item-content > * {
+	margin-top: auto ;
+	margin-bottom: auto ;
+}
+
+.carousel-item-content > :not(:last-child) {
+	padding-right: 2.5rem;
+}
+.carousel-item-content > :not(:first-child) {
+	padding-left: 2.5rem;
+}
+
+
+.carousel-item-content-vertical {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.carousel-item-content-vertical > * {
+	margin-left: auto ;
+	margin-right: auto ;
+}
+
+.carousel-item-content-vertical > :not(:last-child) {
+	padding-bottom: 2.5rem;
+}
+.carousel-item-content-vertical > :not(:first-child) {
+	padding-top: 2.5rem;
+}
+
+
+@media only screen and (max-width: 1500px){
+	.carousel-item-content, .carousel-item-content-vertical{
+		height: 100%;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	
+	.carousel-item-content > *, .carousel-item-content-vertical > * {
+		margin-top: 0rem;
+		margin-bottom: 0rem;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	.carousel-item-content > :not(:last-child), .carousel-item-content-vertical > :not(:last-child) {
+		padding-right: 0rem;
+		padding-bottom: 2.5rem;
+	}
+	.carousel-item-content > :not(:first-child), .carousel-item-content-vertical > :not(:first-child) {
+		padding-left: 0rem;
+		padding-top: 2.5rem;
+	}
+}
+
+@media only screen and (max-width: 768px){
+	.carousel-item-content > img, .carousel-item-content-vertical > img {
+		width: 340px;
+		height: auto;
+	}
+}
+
+/*End Carousel*/
+
+
 
 /* Link */
 
@@ -193,6 +309,18 @@ a.c-md-icon:hover {
 }
 
 
+/*Bootstrap-based multi-item Carousel Template (https://azmind.com/bootstrap-carousel-multiple-items/)*/
+/*
+    code by Iatek LLC 2018 - CC 2.0 License - Attribution required
+    code customized by Azmind.com
+*/
+
+/*END Caurosel Template*/
+
+
+
+
+
 /* Hover.css Addons (No CDN) */
 /* Float */
 .hvr-float {
@@ -214,11 +342,134 @@ a.c-md-icon:hover {
 }
 /* END Hover.css Addons (No CDN) */
 
-/*Boop */
+
 
 
 /* Bootstrap 4 Overrides */
 
+.carousel-inner{
+	width: 100%;
+	max-width: 100%;
+	height: 100%;
+	max-height: 100%;
+}
+
+.main-carousel > .carousel-inner > .carousel-item {
+	width: 100%;
+	max-width: 100%;
+	height: 100%;
+	max-height: 100%;
+	padding-left: 12rem;
+	padding-right: 12rem;
+	border-radius: 30px;
+	overflow:hidden;
+}
+
+@media only screen and (max-width: 1500px){
+	.main-carousel > .carousel-inner > .carousel-item {
+		width: 100%;
+		max-width: 100%;
+		height: 100%;
+		max-height: 100%;
+		padding-left: 8rem;
+		padding-right: 8rem;
+		border-radius: 30px;
+	}
+}
+
+@media only screen and (max-width: 768px){
+	.main-carousel > .carousel-inner > .carousel-item {
+		width: 100%;
+		max-width: 100%;
+		height: 100%;
+		max-height: 100%;
+		padding-left: 6rem;
+		padding-right: 6rem;
+		border-radius: 30px;
+	}
+}
+
+.navbar{
+	padding-left: 14rem;
+	padding-right: 14rem;
+	transition: padding 750ms;
+}
+
+
+.navbar-brand{
+}
+
+.nav-item{
+	background-color: var(--secondary-color);
+	
+	border-radius: 50px;
+	border-width: 2px;
+	
+	padding-left: 4rem;
+	padding-right: 4rem;
+	
+	margin-left: 4rem;
+	
+	transition: background-color 500ms, padding 750ms;
+	
+}
+
+
+.nav-item:hover{
+	background-color: var(--purple);
+}
+
+.nav-item:hover > .nav-link{
+	color: white;
+	transition: color 100ms;
+}
+
+.nav-link{
+	color: var(--primary-text-color);
+	font-weight: 400;
+}
+
+.navbar-toggler{
+
+}
+
+@media only screen and (max-width: 1670px){
+	.nav-item{
+		padding-left: 1rem;
+		padding-right: 1rem;
+		
+		margin-left: 2rem;
+		transition: background-color 500ms, padding 750ms;
+	}
+	
+	.navbar{
+		padding-left: 2.7rem;
+		padding-right: 2.7rem;
+	}
+}
+
+@media only screen and (max-width: 1070px){
+	.nav-item{
+		padding-left: 0.9rem;
+		padding-right: 0.9rem;
+	}
+	
+@media only screen and (max-width: 768px){
+	/*Conforms with Bootstrap medium device breakpoint*/
+	.nav-item{
+		margin-top: 1rem;
+		text-align: center;
+	}
+	ul>.nav-item:first-child{
+		margin-top: 1.5rem;
+	}
+	ul>.nav-item:last-child{
+		margin-bottom: 1.5rem;
+	}
+	
+}
+
+	
 .form-control{
   border-radius: 2px;
   border-width: 0;
@@ -240,8 +491,11 @@ a.c-md-icon:hover {
   background-color: var(--primary-color-dark);
 }
 
+
 /* END Bootstrap 4 Overrides */
 
+	
+	
 
 /* Full Calendar Overrides*/
 
@@ -257,8 +511,9 @@ a.c-md-icon:hover {
 
 .c-bg-grey {
   /**background-color: #636466;   **/
-  background: rgb(10,10,10);
-  background: linear-gradient(45deg, rgba(10,10,10,0.95) 35%, var(--primary-color) 100%);
+  background: white;
+  /**background: rgb(10,10,10);**/
+  /**background: linear-gradient(45deg, rgba(10,10,10,0.95) 35%, var(--primary-color) 100%);**/
 }
 
 .c-white {
