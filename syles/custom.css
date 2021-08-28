@@ -174,11 +174,34 @@ header {
 	margin-bottom: 4rem;
 }
 
+.full-divider-top {
+	height: 50px;
+	width: 100%;
+	background: white;
+	border-radius: 0px 0px 30px 30px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 4rem;
+	margin-bottom: 4rem;
+}
+
+.full-divider-bottom {
+	height: 50px;
+	width: 100%;
+	background: black;
+	border-radius: 30px 30px 0px 0px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 4rem;
+	margin-bottom: 4rem;
+}
 
 /* Carousel (in conjunction with Bootstrap styles) */
 
 .main-carousel {
-	height: 800px;
+	height: 80vh;
+	min-height: 600px;
+	max-height: 800px;
 	width: 1700px;
 	margin-left: auto !important;
 	margin-right: auto !important;
@@ -190,9 +213,6 @@ header {
 @media only screen and (max-width: 1800px){
 	.main-carousel {
 		width: 95%;
-		height: 80vh;
-		min-height: 500px;
-		max-height: 800px;
 	}
 }
 
