@@ -228,6 +228,12 @@ header {
 	}
 }
 
+@media only screen and (max-width: 576px){
+	.main-carousel {
+		height: 600px;
+	}
+}
+
 
 .carousel-item-content {
 	height: 100%;
@@ -270,6 +276,15 @@ header {
 	padding-top: 2.5rem;
 }
 
+.carousel-item-content h2, .carousel-item-content-vertical h2 {
+		font-size: 4rem;
+	}
+
+.carousel-item-content p, .carousel-item-content-vertical p {
+	font-size: 1.5rem; 
+	line-height: 2.5rem;
+}
+
 
 @media only screen and (max-width: 1500px){
 	.carousel-item-content, .carousel-item-content-vertical{
@@ -301,7 +316,37 @@ header {
 	.carousel-item-content > img, .carousel-item-content-vertical > img {
 		width: 340px;
 		height: auto;
+		
 	}
+	
+
+}
+
+
+@media only screen and (max-width: 576px){
+	.carousel-item-content > img, .carousel-item-content-vertical > img {
+		width: 240px;
+		height: auto;
+		
+	}
+	
+	.carousel-item-content > :not(:last-child), .carousel-item-content-vertical > :not(:last-child) {
+		padding-right: 0rem;
+		padding-bottom: 1rem;
+	}
+	.carousel-item-content > :not(:first-child), .carousel-item-content-vertical > :not(:first-child) {
+		padding-left: 0rem;
+		padding-top: 1rem;
+	}
+	
+	.carousel-item-content h2, .carousel-item-content-vertical h2 {
+		font-size: 2rem;
+	}
+	
+	.carousel-item-content p, .carousel-item-content-vertical p {
+		font-size: 1rem;
+	}
+	
 }
 
 /*End Carousel*/
