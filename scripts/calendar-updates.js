@@ -1,5 +1,7 @@
 // Updates calendar with most 5 recent events from google calendar "ASME General Calendar"
 
+//Doesn't handle recurring events
+
 const maxEvents = 5;
 
 
@@ -11,6 +13,20 @@ function postEvent(title, description, date){
 					</div>
 				</div>`;
 	$("#google-calendar-cards").append(newCard);
+}
+
+
+function getCurrentDate() {
+		var date = new Date();
+		var extraZero = "0";
+		if (date.getMonth() > 8) { 
+			extraZero = "";
+		}
+		
+		var stringDate = date.getFullYear() + "-" + extraZero + (date.getMonth() + 1) + "-" + date.getDate();
+		console.log(stringDate);
+
+	return stringDate;
 }
 
 
@@ -34,21 +50,14 @@ function getData() {
     },
 
     success: function (data) {
-		var date = new Date();
-		var extraZero = "0";
-		if (date.getMonth() > 8) { 
-			extraZero = "";
-		}
 		
-		var stringDate = date.getFullYear() + "-" + extraZero + (date.getMonth() + 1) + "-" + date.getDate();
-		console.log(stringDate);
-        var stringy = "";
-		var eventCount = 0;
 		
 		/*data.items.sort(function(a,b){
 			console.log(a, b);
 			return a.end[0] > b.end[0];
 		});*/
+		var stringDate = getCurrentDate();
+		var eventCount = 0;
 		
 		for(var i = 0; i < Object.keys(data.items).length && eventCount < maxEvents; i++) {
 			console.log(data.items[i]);

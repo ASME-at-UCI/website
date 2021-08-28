@@ -162,6 +162,17 @@ h4.c-event-card {
 header {
 }
 
+.divider {
+	height: 15px;
+	width: 30%;
+	max-width: 1700px;
+	background: var(--secondary-color);
+	border-radius: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 4rem;
+	margin-bottom: 4rem;
+}
 
 
 /* Carousel (in conjunction with Bootstrap styles) */
@@ -179,6 +190,9 @@ header {
 @media only screen and (max-width: 1800px){
 	.main-carousel {
 		width: 95%;
+		height: 80vh;
+		min-height: 500px;
+		max-height: 800px;
 	}
 }
 
@@ -190,7 +204,7 @@ header {
 
 @media only screen and (max-width: 768px){
 	.main-carousel {
-		height: 900px;
+		height: 700px;
 	}
 }
 
