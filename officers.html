@@ -1,69 +1,74 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <!--Fonts-->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,700&display=swap" rel="stylesheet">
-    <!-- Bootstrap 4.5.2 -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <!-- Popper JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <!-- Custom jQuery script "custom-script.js" used to animate elements while scrolling-->
-    <script src="./scripts/custom-script.js"></script>
-    <!--Animate.css Library
-    WARNING: currently the animate__animated class is used with a custom script. Check the script for more info-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <!--Hover.css 2.1.1 Library
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover.css"/>-->
-    <!-- FontAwesome Icons -->
-    <script src="https://kit.fontawesome.com/84dfbe2946.js" crossorigin="anonymous"></script>
-    <!-- Custom Stylesheet "custom.css" used to override previous libraries-->
-    <link rel="stylesheet" href="./syles/custom.css" type="text/css">
-    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
-    <title>Officers - ASME at UCI</title>
-    <link rel="icon" href="./images/logo-favicon.png">
-  </head>
-  <body style="">
-    <header class="p-5">
-      <img src="./images/logo.png" alt="ASME@UCI Logo" class="c-header-logo">
-    </header>
+		<!--Fonts-->
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,700&display=swap" rel="stylesheet">
+		<!-- Bootstrap 4.5.2 -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<!-- Popper JS -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="https://apis.google.com/js/api.js"></script>
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+		<!-- Custom jQuery script "custom-script.js" used to animate elements while scrolling-->
+		<script src="./scripts/custom-script.js" defer></script>
+		<!-- Custom jQuery script "custom-script.js" used to animate elements while scrolling-->
+		<script src="./scripts/calendar-updates.js" defer></script>
+		<!--Animate.css Library
+		WARNING: currently the animate__animated class is used with a custom script. Check the script for more info-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+		<!--Hover.css 2.1.1 Library
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover.css"/>-->
+		<!-- FontAwesome Icons -->
+		<script src="https://kit.fontawesome.com/84dfbe2946.js" crossorigin="anonymous"></script>
+		<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+		<title>Officers | ASME at UCI</title>
+		<link rel="icon" href="./images/gears-favicon.png">
+		<!-- FullCalendar.io JS -->
+    	<script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.5.1/locales-all.min.js"></script>
+    	<script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.5.1/main.min.js"></script>
+    	<!-- FullCalendar.io CSS -->
+    	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@5.5.1/main.min.css">
+    	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Custom Stylesheet "custom.css" used to override previous libraries-->
+		<link rel="stylesheet" href="./syles/custom.css?2" type="text/css">
+	</head>
+	
+<body style="">
+		
+	<!--Navigation Bar -->
+	<nav class="navbar navbar-expand-md c-bg-grey mt-0 py-4" >
+		<!--Home Button
+		<a class="navbar-brand far fa-circle ml-1 c-white" href="./index.html"></a>-->	
+		<a class="navbar-brand" href="./index.html"> 
+			<img src="images/new-logo.png" alt="" height="60px"> 
+		</a>
+		<!--Collapse Navigation Toggler-->
+		<button class="c-navbar-button navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+		<span style="color: rgb(50, 0, 143); font-size:2rem;" class="fas fa-bars"></span>
+		</button>
+		<!--Links-->
+		<div class="collapse navbar-collapse flex-row-reverse c-white" id="collapsibleNavbar"> 
+			<ul class="navbar-nav mt-md-0">
+				<li class="nav-item">
+					<a class="nav-link " href="./index.html#join">Join Us</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="./index.html#events">Events</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="./officers.html">Officers</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="./index.html#contact">Contact</a>
+				</li>
+			</ul>	 
+		</div>
+	</nav>
 
-    <!--Navigation Bar -->
-    <nav class="navbar navbar-expand-md sticky-top c-bg-grey mt-0">
-      <!--Home Button-->
-      <a class="navbar-brand far fa-circle ml-1 c-white" href="./index.html"></a>
-      <!--Collapse Navigation Toggler-->
-      <button class="c-navbar-button navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-        <span style="color: white;"class="fas fa-bars"></span>
-      </button>
-      <!--Links-->
-      <div class="flex-row-reverse collapse navbar-collapse c-white" id="collapsibleNavbar">
-        <ul class="navbar-nav mr-3 mt-2 mt-md-0">
-          <li class="nav-item mx-2">
-            <a class="c-white nav-link" href="./index.html#join">Join Us</a>
-          </li>
-          <li class="nav-item mx-2">
-            <a class="c-white nav-link" href="./events.html">Events</a>
-          </li>
-          <li class="nav-item mx-2">
-            <a class="c-white nav-link" href="./officers.html">Officers</a>
-          </li>
-          <li class="nav-item mx-2">
-            <a class="c-white nav-link" href="./index.html#contact">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-
-    <!--Triangle Divider-->
-    <div id="c-triangle-holder">
-      <div id="c-triangle-2"></div>
-      <div id="c-triangle-1"></div>
-    </div>
 
     <!--Club Officer List-->
     <div style="" class="c-tile p-5 container">
@@ -85,7 +90,7 @@
             <img class="card-img-top" src="./images/anthony.jpg" alt="Anthony Chin">
             <div class="card-body">
               <h4 class="card-title">Anthony Chin</h4>
-              <p class="card-text">Vice President</p>
+              <p class="card-text">Communications Director</p>
               <a href="mailto:chinag@uci.edu">chinag@uci.edu</a>
             </div>
           </div>
@@ -107,12 +112,21 @@
               <a href="mailto:sgshanno@uci.edu">sgshanno@uci.edu</a>
             </div>
           </div>
-
-          <div class="animate__animated card c-contact-card">
+			
+		<div class="animate__animated card c-contact-card">
+            <img class="card-img-top" src="./images/contact.jpg" alt="Quan Nguyen">
+            <div class="card-body">
+              <h4 class="card-title">Anisha Jayasekara</h4>
+              <p class="card-text">Projects Director</p>
+              <a href="mailto:qingjies@uci.edu">qingjies@uci.edu</a>
+            </div>
+          </div>
+			
+		 <div class="animate__animated card c-contact-card">
             <img class="card-img-top" src="./images/tim.jpg" alt="Timothy Young">
             <div class="card-body">
               <h4 class="card-title">Timothy Young</h4>
-              <p class="card-text">Treasurer</p>
+              <p class="card-text">Finance Director</p>
               <a href="mailto:timothly@uci.edu">timothly@uci.edu</a>
             </div>
           </div>
@@ -121,7 +135,7 @@
             <img class="card-img-top" src="./images/contact.jpg" alt="Quan Nguyen">
             <div class="card-body">
               <h4 class="card-title">Brion Song</h4>
-              <p class="card-text">Secretary</p>
+              <p class="card-text">Historian</p>
               <a href="mailto:qingjies@uci.edu">qingjies@uci.edu</a>
             </div>
           </div>
@@ -130,7 +144,7 @@
             <img class="card-img-top" src="./images/ben.jpg" alt="Benjamen Bielecki">
             <div class="card-body">
               <h4 class="card-title">Benjamen Bielecki</h4>
-              <p class="card-text">Media Director</p>
+              <p class="card-text">Webmaster</p>
               <a href="mailto:bbieleck@uci.edu">bbieleck@uci.edu</a>
             </div>
           </div>

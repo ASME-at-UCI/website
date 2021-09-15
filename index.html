@@ -14,9 +14,11 @@
 		<!-- Latest compiled JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 		<!-- Custom jQuery script "custom-script.js" used to animate elements while scrolling-->
-		<script src="./scripts/custom-script.js"></script>
+		<script src="./scripts/custom-script.js" defer></script>
 		<!-- Custom jQuery script "custom-script.js" used to animate elements while scrolling-->
-		<script src="./scripts/calendar-updates.js"></script>
+		<script src="./scripts/calendar-updates.js" defer></script>
+		<!--Hover.css Library-->
+		<link rel="stylesheet" href="./syles/hover.css" type="text/css">
 		<!--Animate.css Library
 		WARNING: currently the animate__animated class is used with a custom script. Check the script for more info-->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
@@ -24,8 +26,6 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover.css"/>-->
 		<!-- FontAwesome Icons -->
 		<script src="https://kit.fontawesome.com/84dfbe2946.js" crossorigin="anonymous"></script>
-		<!-- Custom Stylesheet "custom.css" used to override previous libraries-->
-		<link rel="stylesheet" href="./syles/custom.css?2" type="text/css">
 		<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
 		<title>ASME at UCI</title>
 		<link rel="icon" href="./images/gears-favicon.png">
@@ -39,11 +39,17 @@
 		  document.addEventListener('DOMContentLoaded', function() {
 			var calendarEl = document.getElementById('calendar');
 			var calendar = new FullCalendar.Calendar(calendarEl, {
-			  initialView: 'dayGridMonth'
+			  	initialView: 'dayGridMonth',
+				googleCalendarApiKey: 'AIzaSyBT7UEh989MTpktfCQndnRuXlssCvDxyuM',
+				events: {
+				googleCalendarId: 'fkrnncaoabqplq6ps08b01suf8@group.calendar.google.com'
+				}
 			});
 			calendar.render();
 		  });
     	</script>
+		<!-- Custom Stylesheet "custom.css" used to override previous libraries-->
+		<link rel="stylesheet" href="./syles/custom.css?2" type="text/css">
 	</head>
 	
 <body style="">
@@ -52,7 +58,7 @@
 	<nav class="navbar navbar-expand-md c-bg-grey mt-0 py-4" >
 		<!--Home Button
 		<a class="navbar-brand far fa-circle ml-1 c-white" href="./index.html"></a>-->	
-		<a class="navbar-brand" href=""> 
+		<a class="navbar-brand" href="./index.html"> 
 			<img src="images/new-logo.png" alt="" height="60px"> 
 		</a>
 		<!--Collapse Navigation Toggler-->
@@ -62,16 +68,16 @@
 		<!--Links-->
 		<div class="collapse navbar-collapse flex-row-reverse c-white" id="collapsibleNavbar"> 
 			<ul class="navbar-nav mt-md-0">
-				<li class="nav-item animate__animated animate__fast">
-					<a class="nav-link " href="./index.html#join">Join Us</a>
+				<li class="nav-item">
+					<a class="nav-link " href="./index.html#join-us">Join Us</a>
 				</li>
-				<li class="nav-item animate__animated animate__fast">
-					<a class="nav-link" href="./events.html">Events</a>
+				<li class="nav-item">
+					<a class="nav-link" href="./index.html#events">Events</a>
 				</li>
-				<li class="nav-item animate__animated animate__fast">
+				<li class="nav-item">
 					<a class="nav-link" href="./officers.html">Officers</a>
 				</li>
-				<li class="nav-item animate__animated animate__fast">
+				<li class="nav-item">
 					<a class="nav-link" href="./index.html#contact">Contact</a>
 				</li>
 			</ul>	 
@@ -107,9 +113,9 @@
 				<div class="carousel-item"  style="background: #FFCF44;">
 					<div class="carousel-item-content">
 						<div class="d-flex flex-column">
-							<h2 class="animate__animated">Sign Up</h2>
+							<h2 class="animate__animated">Join Us</h2>
 							<p class="animate__animated">
-							  Go to our <a href="">UCI Campusgroups page</a> and officially join our club!
+							  Sign up for the <a class = "contrast-link" href="./index.html#join-us">Weekly Newsletter</a> to get club updates!
 							</p>
 						</div>
 						<img class="animate__animated" style="float: none;" src="images/form.png" alt="Form" height="400px">
@@ -120,7 +126,7 @@
 						<div class="d-flex flex-column text-center">
 							<h2 class="c-white animate__animated">Interested in Projects?</h2>
 							<p class="c-white animate__animated">
-							  Learn about our projects like <a href="">Fiat Lux</a> and how you can get involved.
+							  Learn about our projects like <a href="./oops.html">Fiat Lux</a> and how you can get involved.
 							</p>
 						</div>
 						<img class="animate__animated" src="images/fiat-lux.png" alt="Form" width="66%">
@@ -140,94 +146,41 @@
 	</div>
 	
 	
-	<div class="divider"> </div>
+	<div id="events" class="divider"> </div>
 	
 	 <!--Event Board-->
-	<div class="">
+	<div class="event-board">
 		<div id="google-calendar-cards" class="container" style="text-align: center;">
 	  	<h2 class="animate__animated p-0 mx-auto" style="text-align: center;">
 			Upcoming Events
 	  	</h2>
-
-	  	<div class="animate__animated card c-event-card ">
-			<div class="card-body ">
-		  	<h4 class="card-title">
-				End of the World - After Party
-				<span class="badge c-new-badge">New</span> 
-				<i data-toggle="collapse" data-target="#demo" class="fas fa-angle-down"></i>
-			</h4>
-				<div class="card-text">
-					Wednesday, June 16th, 2021
-				</div>
-				<div id="demo" class="collapse">				
-					<br>	
-					Lorem ipsum dolor text....
-				</div>
-			</div>
-										
-		  </div>
-
 		</div>
 	
 
 		<!--Event Calendar-->
 		<div class="container py-5" style="text-align: center;">
-		  <h2 class="animate__animated py-2 mx-auto" style="text-align: center;">
+		  <h2 class="animate__animated pt-5 pb-2 mx-auto" style="text-align: center;">
 			Event Calendar
 		  </h2>
-		  <div id="calendar" class="animate__animated pt-5"></div>
+		  <div id="calendar" class="animate__animated "></div>
 		</div>
 	</div>
 	
-    		 
-	
-    <!--About-->
-    <div style="background: rgb(12,0,36); background: linear-gradient(332deg, rgba(12,0,36,1) 0%, rgba(45,9,121,1) 39%, rgba(0,212,255,1) 100%);" class="c-tile p-5 container">
-        
-        <hr class="animate__animated my-5">
-        <h2 style="text-align: center;" class="animate__animated pt-5">Meeting Info</h2>
-        <div class="row c-black c-bold">
-          <div class="animate__animated p-5 col-md-4 text-center">
-            <span class="c-lg-icon far fa-calendar-alt"></span>
-            <p class="pt-5">Every other Tuesday</p>
-          </div>
-          <div class="animate__animated p-5 col-md-4 text-center">
-            <span class="c-lg-icon far fa-clock"></span>
-            <p class="pt-5">8:00 - 9:00 PM PST</p>
-          </div>
-          <div class="animate__animated p-5 col-md-4 text-center">
-              <span class="c-lg-icon far fa-map"></span>
-              <p class="pt-5">Zoom</p>
-          </div>
-      </div>
-    </div>
+    		
+    
 
     <!--"Join Us"/Newsletter Form-->
     <div id="join" class="c-img-background c-lg-tile">
-      <div id="join-us" class="animate__animated c-tile c-background-primary container  d-flex flex-column">
+      <div id="join-us" class="c-tile c-background-primary container d-flex flex-column">
       <!--Title-->
-        <div class="d-flex">
+        <div id="" class="d-flex">
           <div>
             <h1>Join Us</h1>
             <p>Sign Up for the Newsletter</p>
           </div>
           <span style="color: white; font-size: 5rem;" class="fas fa-envelope-open-text my-auto ml-auto mr-0"></span>
         </div>
-      <!--Sign Up Form-->
-      <!--
-      <div class="mt-5">
-        <form action="/action_page.php">
-          <div class="form-group">
-            <label for="email">Name:</label>
-            <input type="text" class="form-control" placeholder="Enter name" id="name">
-          </div>
-          <div class="form-group">
-            <label for="email">Email address:</label>
-            <input type="email" class="form-control" placeholder="Enter email" id="email">
-          </div>
-          <button type="submit" class="btn btn-primary mt-4">Submit</button>
-        </form>
-        -->
+   
           <!-- Begin Mailchimp Signup Form -->
           <div id="mc_embed_signup" class="mt-5">
           <form action="https://asmeuci.us1.list-manage.com/subscribe/post?u=946be379e994a69582a86839c&amp;id=3f5dcbf8b2" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
@@ -255,9 +208,16 @@
           </div>
           <!--End mc_embed_signup-->
         </div>
+		<a href="https://forms.gle/yhQYjRjgk1wU6bjG7" id="full-membership" class="hvr-grow-rotate  container mt-5 d-flex justify-content-between">
+			<div>Want to become a <b>full member</b>?</div>
+			<i style="font-size:1.5rem;" data-toggle="collapse" data-target="" class="fas fa-angle-right my-auto" aria-hidden="true" aria-expanded="true"></i>
+		</a>
       </div>
-    </div>
+ 
 
+	
+	
+	
     <!--Social Media Links-->
     <div id="contact" class="c-tile p-5 container">
         <h2 class="animate__animated p-0 mx-auto" style="text-align: center;">
@@ -278,10 +238,13 @@
           </div>
       </div>
     </div>
+	
     <!--Image Gallery -->
+		<img class="animate__animated mx-auto" style="display:block; position:relative; left:-17px;"  width="300px" src="images/Letters and Anteater.svg"></img>
 
+	
     <footer style="text-align: center; width: 100%; padding-top: 100px; padding-bottom: 50px;">
-       <span>Created by Benjamen Bielecki. Copyright © 2021 The American Society of Mechanical Engineers, UC Irvine Chapter. All Rights Reserved.
+       <span>Created by Benjamen Bielecki. ASME at UCI logo designed by Noelle Camanyag. Copyright © 2021 The American Society of Mechanical Engineers, UC Irvine Chapter. All Rights Reserved.
          <br>"Technical Drawing" by Andrew* is licensed under CC BY-SA 2.0<span>
     </footer>
   </body>

@@ -81,29 +81,36 @@ h2 {
 
 .c-lg-tile {
   background-color:black;
-  height: 1000px;
+  height: 1050px;
   padding-top: 200px;
 }
 
 .c-contact-card {
-  margin-left: .5rem;
-  margin-right: .5rem;
-  margin-top: 1.5rem;
-  max-width: 245px;
-  font-size: 1rem;
-  border-radius: 1px;
+	margin-left: .5rem;
+	margin-right: .5rem;
+	margin-top: 1.5rem;
+	max-width: 245px;
+	font-size: 1rem;
+	border-radius: 20px;
+	overflow: hidden;
+	
+	border-color: rgba(0,0,0,0.05);
+	box-shadow: 0px 4px 15px 0px rgba(0,0,0,0.1);
 }
+
 
 h4.c-contact-card {
   font-size: 2rem;
 }
 
 .c-event-card {
-  margin-top: 1.5rem;
-  max-width: 100%;
-  font-size: 1rem;
-  border-radius: 15px;
-  text-align: left;
+	margin-top: 1.5rem;
+	max-width: 100%;
+	font-size: 1rem;
+	border-radius: 15px;
+	text-align: left;
+	border-color: rgba(0,0,0,0.05);
+	box-shadow: 0px 4px 15px 0px rgba(0,0,0,0.1);
 }
 
 h4.c-event-card {
@@ -125,6 +132,15 @@ h4.c-event-card {
   background-position: contain;
   background-repeat: no-repeat;
   background-attachment: fixed;
+}
+
+
+.event-board{
+	background-image: url("../images/boop.svg");
+	background-size: cover;
+ 	background-position: contain;
+  	background-repeat: no-repeat;
+	
 }
 
 #c-triangle-holder{
@@ -153,10 +169,24 @@ h4.c-event-card {
 }
 
 #join-us {
-  padding: 4rem;
-  max-width: 600px;
-  color: white;
-  border-radius: 2px;
+	padding: 4rem;
+	max-width: 600px;
+	color: white;
+	border-radius: 30px;
+	background-color: rgba(35, 0, 102,0.9);
+	/*background: linear-gradient(356deg, rgba(48,9,121,0.9) 29%, rgba(0,212,255,0.9) 100%);*/
+}
+
+#full-membership {
+	font-size: 1.25rem;
+	padding: 1rem;
+	padding-left: 3rem;
+	padding-right: 3rem;
+	max-width: 600px;
+	color: white;
+	border-radius: 30px;
+	background-color: rgba(162,147,190,0.90)/*rgba(125,125,125,0.90)*/;
+	/*background: linear-gradient(356deg, rgba(48,9,121,0.9) 29%, rgba(0,212,255,0.9) 100%);*/
 }
 
 header {
@@ -352,11 +382,10 @@ header {
 /*End Carousel*/
 
 
-
 /* Link */
 
-a:link {
-
+a {
+	color: var(--primary-color);
   background-color: transparent;
   text-decoration: none;
 }
@@ -367,7 +396,8 @@ a:visited {
 }
 
 a:hover {
-  color: inherit;
+   color: var(--purple);
+color: var(--primary-color-dark);
   background-color: transparent;
   text-decoration: none;
 }
@@ -376,8 +406,19 @@ a[href^="mailto"] {
    color: var(--primary-color);
 }
 
+a.contrast-link{
+	color: rgba(12,132,255,1.00);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a.contrast-link:hover{
+color: rgba(0,77,157,1.00);
+  background-color: transparent;
+  text-decoration: none;
+}
+
 a.nav-link:hover {
-  color: lightgray;
   background-color: transparent;
   text-decoration: none;
 }
@@ -532,6 +573,7 @@ a.c-md-icon:hover {
 		padding-left: 0.9rem;
 		padding-right: 0.9rem;
 	}
+}
 	
 @media only screen and (max-width: 768px){
 	/*Conforms with Bootstrap medium device breakpoint*/
@@ -550,24 +592,31 @@ a.c-md-icon:hover {
 
 	
 .form-control{
-  border-radius: 2px;
-  border-width: 0;
-  font-size: 1.25rem;
-  margin-top: 1rem;
-  margin-bottom: 1.5rem;
+	border-radius: 30px;
+	border-width: 0;
+	
+	padding-left: 1rem;
+	padding-right: 1rem;
+	
+	font-size: 1.25rem;
+	margin-top: 1rem;
+	margin-bottom: 1.5rem;
 }
 
-.btn-primary {
-  border-radius: 2px;
-  border-width: 0;
-  font-size: 1.25rem;
-  background-color: var(--primary-color-light);
+#join-us .btn-primary {
+	border-radius: 30px;
+	border-width: 0;
+	
+	padding-left: 1rem;
+	padding-right: 1rem;
+	
+	font-size: 1.25rem;
+	background-color: rgba(162,147,190,0.90);
 }
 
-.btn-primary:hover {
-  border-radius: 2px;
+#join-us .btn-primary:hover {
   border-width: 0;
-  background-color: var(--primary-color-dark);
+  background-color: var(--secondary-text-color);
 }
 
 
@@ -579,11 +628,84 @@ a.c-md-icon:hover {
 /* Full Calendar Overrides*/
 
 .fc-col-header-cell-cushion {
-  color: var(--primary-color-dark);
+	color: var(--primary-color-dark);
 }
 
 .fc-daygrid-day-number {
-  color: var(--secondary-color);
+	color: var(--primary-text-color);
+}
+	
+a.fc-daygrid-block-event {
+	background-color: var(--purple);
+	border-color: var(--purple);
+}
+
+a.fc-daygrid-event {
+	color: var(--primary-text-color);
+	
+}
+
+.fc-daygrid-event-dot {
+	border-color: var(--purple);
+}
+
+.fc .fc-daygrid-day.fc-day-today {
+	background-color: rgba(17,129,255,0.10);;
+}
+
+.fc .fc-button {
+	background-color: var(--secondary-color);
+	transition: background-color 500ms, padding 750ms;
+	
+	border-color: transparent;
+	border-radius: 30px;
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+
+.fc .fc-button:hover {
+	background-color: var(--purple);
+	border-color: transparent;
+}
+
+.fc .fc-button *{
+	color: var(--primary-text-color);
+	transition: color 100ms;
+}
+
+.fc .fc-button:hover *{
+	color: white;
+	transition: color 100ms;
+}
+
+.fc .fc-button:disabled {
+	background-color: black;
+}
+
+.fc .fc-button:disabled:hover {
+	
+}
+
+.fc .fc-button-primary{
+	color: var(--primary-text-color);
+}
+
+.fc-col-header-cell-cushion {
+	color: var(--primary-text-color);
+}
+
+.fc-theme-standard .fc-scrollgrid{
+	background: rgba(255,255,255,0.7);
+	border-color: rgba(0,0,0,0.1);
+	box-shadow: 0px 4px 15px 0px rgba(0,0,0,0.1);
+	border-radius: 30px;
+}
+
+.fc .fc-scrollgrid-section>* {
+    border-top-width: 0;
+    border-left-width: 0;
+	border-bottom-width: 0;
+    border-right-width: 0;
 }
 
 /* END Full Calendar Overrides*/

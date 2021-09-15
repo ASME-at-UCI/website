@@ -32,14 +32,19 @@ function checkAnimation() {
 }
 
 // Capture scroll events
-$(window).scroll(function(){
+/*$(window).scroll(function(){
     checkAnimation();
-});
+});*/
 
 // Capture initial Loading
 $(window).ready(function(){
     checkAnimation();
 });
+
+//Check animation status every 10ms
+setInterval(function() {
+    checkAnimation();
+}, 10);
 
 
 //https://stackoverflow.com/questions/16325679/activate-css3-animation-when-the-content-scrolls-into-view
