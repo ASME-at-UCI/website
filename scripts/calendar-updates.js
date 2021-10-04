@@ -37,12 +37,16 @@ function postEvent(title, description, date, link){
 
 function getCurrentDate() {
 		let date = new Date();
-		let extraZero = "0";
+		let extraZeroM = "0";
 		if (date.getMonth() > 8) { 
-			extraZero = "";
+			extraZeroM = "";
+		}
+		let extraZeroD = "0";
+		if (date.getDate() > 9) { 
+			extraZeroD = "";
 		}
 		
-		let stringDate = date.getFullYear() + "-" + extraZero + (date.getMonth() + 1) + "-" + date.getDate();
+		let stringDate = date.getFullYear() + "-" + extraZeroM + (date.getMonth() + 1) + "-" + extraZeroD + date.getDate();
 		console.log(stringDate);
 
 	return stringDate + DEFAULT_TIME;
