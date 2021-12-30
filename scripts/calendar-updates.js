@@ -13,7 +13,7 @@ function postEvent(title, description, date, link){
 		todayBadge = `<span class="badge c-new-badge">Today</span>`;
 	}
 	let id = "event-card-" + postEventCount;
-	let newCard = `<div data-toggle="collapse" data-target="#` + id + `" class="animate__animated card c-event-card ">
+	let newCard = `<div data-toggle="collapse" data-aos-duration="750" data-target="#` + id + `" class="card c-event-card ">
 						<div class="card-body ">
 						<h4 class="card-title hvr-icon-down">
 							`+ title + todayBadge +`
