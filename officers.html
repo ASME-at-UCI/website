@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+		<title>ASME at UCI</title>
+		<link rel="icon" href="./images/gears-favicon.png">
+    
 		<!--Fonts-->
 		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,700&display=swap" rel="stylesheet">
@@ -17,6 +21,8 @@
 		<script src="./scripts/custom-script.js" defer></script>
 		<!-- Custom jQuery script "custom-script.js" used to animate elements while scrolling-->
 		<script src="./scripts/calendar-updates.js" defer></script>
+		<!--Hover.css Library-->
+		<link rel="stylesheet" href="./syles/hover.css" type="text/css">
 		<!--Animate.css Library
 		WARNING: currently the animate__animated class is used with a custom script. Check the script for more info-->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
@@ -24,20 +30,26 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover.css"/>-->
 		<!-- FontAwesome Icons -->
 		<script src="https://kit.fontawesome.com/84dfbe2946.js" crossorigin="anonymous"></script>
-		<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
-		<title>Officers | ASME at UCI</title>
-		<link rel="icon" href="./images/gears-favicon.png">
+		<!-- Animate on Scroll Library-->
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 		<!-- FullCalendar.io JS -->
     	<script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.5.1/locales-all.min.js"></script>
     	<script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.5.1/main.min.js"></script>
     	<!-- FullCalendar.io CSS -->
     	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@5.5.1/main.min.css">
     	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+    	<script>
+        document.addEventListener('DOMContentLoaded', function() {
+        AOS.init();
+        });
+
+    	</script>
 		<!-- Custom Stylesheet "custom.css" used to override previous libraries-->
 		<link rel="stylesheet" href="./syles/custom.css?2" type="text/css">
 	</head>
 	
-<body style="">
+<body class="">
 		
 	<!--Navigation Bar -->
 	<nav class="navbar navbar-expand-md c-bg-grey mt-0 py-4" >
@@ -70,14 +82,14 @@
 	</nav>
 
 
-    <!--Club Officer List-->
-    <div style="" class="c-tile p-5 container">
-        <h2 class="p-0 mx-auto animate__animated" style="text-align: center;">
-          Club Officers
+    <!--Board of Directors List-->
+    <div style="" class="c-wide-tile p-5 container">
+        <h2 data-aos="fade-up" class="p-0 mx-auto" style="text-align: center;">
+          Board of Directors
         </h2>
         <div class="d-flex justify-content-center flex-wrap pt-5">
 
-          <div class="animate__animated card c-contact-card">
+          <div data-aos="fade-up" data-aos-duration="750" class="card c-contact-card">
             <img class="card-img-top" src="./images/quan.jpg" alt="Quan Nguyen">
             <div class="card-body">
               <h4 class="card-title">Quan Nguyen</h4>
@@ -86,7 +98,7 @@
             </div>
           </div>
 
-          <div class="animate__animated card c-contact-card">
+          <div data-aos="fade-up" data-aos-duration="750" class="card c-contact-card">
             <img class="card-img-top" src="./images/anthony.jpg" alt="Anthony Chin">
             <div class="card-body">
               <h4 class="card-title">Anthony Chin</h4>
@@ -95,7 +107,7 @@
             </div>
           </div>
 
-          <div class="animate__animated card c-contact-card">
+          <div data-aos="fade-up" data-aos-duration="750" class="card c-contact-card">
             <img class="card-img-top" src="./images/noelle.jpg" alt="Noelle Camanyag">
             <div class="card-body">
               <h4 class="card-title">Noelle Camanyag</h4>
@@ -104,7 +116,7 @@
             </div>
           </div>
 
-          <div class="animate__animated card c-contact-card">
+          <div data-aos="fade-up" data-aos-duration="750" class=" card c-contact-card">
             <img class="card-img-top" src="./images/sophia.jpg" alt="Sophia Shannon">
             <div class="card-body">
               <h4 class="card-title">Sophia Shannon</h4>
@@ -113,50 +125,134 @@
             </div>
           </div>
 			
-		<div class="animate__animated card c-contact-card">
+		<div data-aos="fade-up" data-aos-duration="750" class=" card c-contact-card">
             <img class="card-img-top" src="./images/contact.jpg" alt="Quan Nguyen">
             <div class="card-body">
               <h4 class="card-title">Anisha Jayasekara</h4>
               <p class="card-text">Projects Director</p>
-              <a href="mailto:qingjies@uci.edu">aajayase@uci.edu</a>
+              <a href="mailto:aajayase@uci.edu">aajayase@uci.edu</a>
             </div>
           </div>
 			
-		 <div class="animate__animated card c-contact-card">
-            <img class="card-img-top" src="./images/tim.jpg" alt="Timothy Young">
+		 <div data-aos="fade-up" data-aos-duration="750" class=" card c-contact-card">
+            <img class="card-img-top" src="./images/contact.jpg" alt="N/A">
             <div class="card-body">
-              <h4 class="card-title">Timothy Young</h4>
+              <h4 class="card-title">N/A</h4>
               <p class="card-text">Finance Director</p>
-              <a href="mailto:timothly@uci.edu">timothly@uci.edu</a>
+              <a href="">N/A</a>
             </div>
           </div>
-
-          <div class="animate__animated card c-contact-card">
-            <img class="card-img-top" src="./images/contact.jpg" alt="Quan Nguyen">
-            <div class="card-body">
-              <h4 class="card-title">Brion Song</h4>
-              <p class="card-text">Historian</p>
-              <a href="mailto:qingjies@uci.edu">qingjies@uci.edu</a>
-            </div>
-          </div>
-
-          <div class="animate__animated card c-contact-card">
-            <img class="card-img-top" src="./images/ben.jpg" alt="Benjamen Bielecki">
-            <div class="card-body">
-              <h4 class="card-title">Benjamen Bielecki</h4>
-              <p class="card-text">Webmaster</p>
-              <a href="mailto:bbieleck@uci.edu">bbieleck@uci.edu</a>
-            </div>
-          </div>
-
-        </div>
-
-
 
       </div>
 
+
+    <!--Communications Committee List-->
+    <div style="" class="c-wide-tile p-5 container">
+      <h2 data-aos="fade-up" class="pt-5 mx-auto" style="text-align: center;">
+        Communications Committee
+      </h2>
+      <div class="d-flex justify-content-center flex-wrap pt-5">
+
+        <div data-aos="fade-up" data-aos-duration="750" class=" card c-contact-card">
+          <div class="card-body">
+            <h4 class="card-title">N/A</h4>
+            <p class="card-text">P.R. Coordinator</p>
+            <a href="">N/A</a>
+          </div>
+        </div>
+
+        <div data-aos="fade-up" data-aos-duration="750" class=" card c-contact-card">
+          <div class="card-body">
+            <h4 class="card-title">N/A</h4>
+            <p class="card-text">Historian</p>
+            <a href="">N/A</a>
+          </div>
+        </div>
+
+        <div data-aos="fade-up" data-aos-duration="750" class=" card c-contact-card">
+          <div class="card-body">
+            <h4 class="card-title">N/A</h4>
+            <p class="card-text">Webmaster</p>
+            <a href="">N/A</a>
+          </div>
+        </div>
+
+      </div>
+
+
+    <!--Projects Committee List-->
+    <div style="" class="c-wide-tile p-5 container">
+      <h2 data-aos="fade-up" class="pt-5 mx-auto" style="text-align: center;">
+        Projects Committee
+      </h2>
+      <div class="d-flex justify-content-center flex-wrap pt-5">
+
+        <div data-aos="fade-up" data-aos-duration="750" class=" card c-contact-card">
+          <div class="card-body">
+            <h4 class="card-title">N/A</h4>
+            <p class="card-text">Project Lead</p>
+            <a href="">N/A</a>
+          </div>
+        </div>
+
+        <div data-aos="fade-up" data-aos-duration="750" class=" card c-contact-card">
+          <div class="card-body">
+            <h4 class="card-title">N/A</h4>
+            <p class="card-text">Project Lead</p>
+            <a href="">N/A</a>
+          </div>
+        </div>
+
+        <div data-aos="fade-up" data-aos-duration="750" class=" card c-contact-card">
+          <div class="card-body">
+            <h4 class="card-title">N/A</h4>
+            <p class="card-text">Project Lead</p>
+            <a href="">N/A</a>
+          </div>
+        </div>
+
+      </div>
+
+    <!--Former Officers List-->
+    <div style="" class="c-tile p-5 container">
+      <h2 data-aos="fade-up" class="pt-5 mx-auto" style="text-align: center;">
+        Former Officers
+      </h2>
+      <div class="d-flex justify-content-center flex-wrap pt-5">
+
+        <div data-aos="fade-up" data-aos-duration="750" class=" card c-contact-card">
+          <div class="card-body">
+            <h4 class="card-title">Timothy Young</h4>
+            <p class="card-text">Finance Director</p>
+            <p class="card-text">2021</p>
+          </div>
+        </div>
+
+
+        <div data-aos="fade-up" data-aos-duration="750" class=" card c-contact-card">
+          <div class="card-body">
+            <h4 class="card-title">Brion Song</h4>
+            <p class="card-text">Historian</p>
+            <p class="card-text">2021</p>
+          </div>
+        </div>
+
+        <div data-aos="fade-up" data-aos-duration="750" class=" card c-contact-card">
+          <div class="card-body">
+            <h4 class="card-title">Benjamen Bielecki</h4>
+            <p class="card-text">Webmaster</p>
+            <p class="card-text">2021</p>
+          </div>
+        </div>
+
+      </div>
+
+
+
+    </div>
+
     <footer style="text-align: center; width: 100%; padding-top: 100px; padding-bottom: 50px;">
-       <span>Created by Benjamen Bielecki. Copyright © 2021 The American Society of Mechanical Engineers, UC Irvine Chapter. All Rights Reserved.<span>
+       <span>Website originally designed by Benjamen Bielecki. ASME at UCI logo designed by Noelle Camanyag. Copyright © 2022 The American Society of Mechanical Engineers, UC Irvine Chapter. All Rights Reserved.<span>
     </footer>
   </body>
 </html>

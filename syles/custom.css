@@ -79,6 +79,16 @@ h2 {
   z-index: 9999;
 }
 
+.c-wide-tile {
+	background-color: none;
+	font-size: 1.2rem;
+	color: gray;
+	min-height: 400px;
+	margin: auto;
+	z-index: 9999;
+	min-width: 90%;
+}
+
 .c-lg-tile {
   background-color:black;
   height: 1050px;
@@ -89,6 +99,7 @@ h2 {
 	margin-left: .5rem;
 	margin-right: .5rem;
 	margin-top: 1.5rem;
+	min-width: 245px;
 	max-width: 245px;
 	font-size: 1rem;
 	border-radius: 20px;
@@ -133,6 +144,14 @@ h4.c-event-card {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+
+.c-img-background-2 {
+	background-color: linear-gradient(9deg, rgba(0,68,168,1) 0%, rgba(57,174,255,1) 44%, rgba(181,220,255,1) 100%);
+	background-image: url("../images/first-meeting.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+  }
 
 
 .event-board{

@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 	<head>
+		<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+		<title>ASME at UCI</title>
+		<link rel="icon" href="./images/gears-favicon.png">
+		
 		<!--Fonts-->
 		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,700&display=swap" rel="stylesheet">
@@ -26,9 +30,9 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover.css"/>-->
 		<!-- FontAwesome Icons -->
 		<script src="https://kit.fontawesome.com/84dfbe2946.js" crossorigin="anonymous"></script>
-		<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
-		<title>ASME at UCI</title>
-		<link rel="icon" href="./images/gears-favicon.png">
+		<!-- Animate on Scroll Library-->
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 		<!-- FullCalendar.io JS -->
     	<script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.5.1/locales-all.min.js"></script>
     	<script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.5.1/main.min.js"></script>
@@ -36,6 +40,9 @@
     	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@5.5.1/main.min.css">
     	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
     	<script>
+			
+
+
 		  document.addEventListener('DOMContentLoaded', function() {
 			var calendarEl = document.getElementById('calendar');
 			var calendar = new FullCalendar.Calendar(calendarEl, {
@@ -46,7 +53,9 @@
 				}
 			});
 			calendar.render();
+			AOS.init();
 		  });
+
     	</script>
 		<!-- Custom Stylesheet "custom.css" used to override previous libraries-->
 		<link rel="stylesheet" href="./syles/custom.css?2" type="text/css">
@@ -98,38 +107,34 @@
 
 		  <!-- The slideshow -->
 	  		<div class="carousel-inner">
-				<div class="carousel-item active" style="background: rgb(0,68,168); background: linear-gradient(9deg, rgba(0,68,168,1) 0%, rgba(57,174,255,1) 44%, rgba(181,220,255,1) 100%);">
+				<div class="carousel-item active c-img-background-2">
 					<div class="carousel-item-content">
 						<div class="d-flex flex-column">
-							<h2 class="c-white animate__animated">We're Back!</h2>
-							<p class="c-white animate__animated">
+						</div>
+						<img width="580px">
+					</div>
+				</div>
+				<div class="carousel-item" style="background: linear-gradient(9deg, rgba(0,68,168,1) 0%, rgba(57,174,255,1) 44%, rgba(181,220,255,1) 100%);">
+					<div class="carousel-item-content">
+						<div class="d-flex flex-column">
+							<h2 data-aos="fade-up" data-aos-duration="500" class="c-white">We're Back!</h2>
+							<p data-aos="fade-up" data-aos-duration="750" class="c-white">
 							  The American Society of Mechanical Engineers has returned to UCI, and we're planning 
-								exciting new events and programs for students to take part in.
+								exciting new events and programs for students to join.
 							</p>
 						</div>
-						<img class="animate__animated" src="images/partly-cloudy.png" alt="Sun Peeking out of the Clouds" height="auto" width="580px">
+						<img data-aos="fade-up" data-aos-duration="750" style="float: none;" src="images/partly-cloudy.png" alt="Sun and Clouds" height="auto" width="580px">
 					</div>
 				</div>
 				<div class="carousel-item"  style="background: #FFCF44;">
 					<div class="carousel-item-content">
 						<div class="d-flex flex-column">
-							<h2 class="animate__animated">Join Us</h2>
-							<p class="animate__animated">
+							<h2 data-aos="fade-up" data-aos-duration="500">Join Us</h2>
+							<p data-aos="fade-up" data-aos-duration="750">
 							  Sign up for the <a class = "contrast-link" href="./index.html#join-us">Weekly Newsletter</a> to get club updates!
 							</p>
 						</div>
-						<img class="animate__animated" style="float: none;" src="images/form.png" alt="Form" height="400px">
-					</div>
-				</div>
-				<div class="carousel-item" style=" background: black;">
-			  		<div  class="flex-column carousel-item-content-vertical">
-						<div class="d-flex flex-column text-center">
-							<h2 class="c-white animate__animated">Interested in Projects?</h2>
-							<p class="c-white animate__animated">
-							  Learn about our projects like <a href="./oops.html">Fiat Lux</a> and how you can get involved.
-							</p>
-						</div>
-						<img class="animate__animated" src="images/fiat-lux.png" alt="Form" width="66%">
+						<img data-aos="fade-up" data-aos-duration="750" style="float: none;" src="images/form.png" alt="Form" height="400px">
 					</div>
 				</div>
 		  	</div>
@@ -151,7 +156,7 @@
 	 <!--Event Board-->
 	<div class="event-board">
 		<div id="google-calendar-cards" class="container" style="text-align: center;">
-	  	<h2 class="animate__animated p-0 mx-auto" style="text-align: center;">
+	  	<h2 data-aos="fade-up" data-aos-duration="500" class="p-0 mx-auto" style="text-align: center;">
 			Upcoming Events
 	  	</h2>
 		</div>
@@ -159,10 +164,10 @@
 
 		<!--Event Calendar-->
 		<div class="container py-5" style="text-align: center;">
-		  <h2 class="animate__animated pt-5 pb-2 mx-auto" style="text-align: center;">
+		  <h2 data-aos="fade-up" data-aos-duration="500" class="pt-5 pb-2 mx-auto" style="text-align: center;">
 			Event Calendar
 		  </h2>
-		  <div id="calendar" class="animate__animated "></div>
+		  <div data-aos="fade-up" data-aos-duration="750" id="calendar"></div>
 		</div>
 	</div>
 	
@@ -215,36 +220,38 @@
       </div>
  
 
-	
+	<!--Image Gallery -->
+
+
 	
 	
     <!--Social Media Links-->
     <div id="contact" class="c-tile p-5 container">
-        <h2 class="animate__animated p-0 mx-auto" style="text-align: center;">
+        <h2 data-aos="fade-up" class="p-0 mx-auto" style="text-align: center;">
           Follow Us
         </h2>
-        <div class="animate__animated row c-black c-bold">
+        <div data-aos="fade-up" data-aos-duration="500" class="row c-black c-bold">
           <div class="p-5 col-sm-4 text-center">
             <a class="c-md-icon fab fa-facebook hvr-float" href="https://www.facebook.com/American-Society-of-Mechanical-Engineers-at-UCI-103751025187023"></a>
             <p class="pt-3">Facebook</p>
           </div>
-          <div class="animate__animated p-5 col-sm-4 text-center">
+          <div data-aos="fade-up" data-aos-duration="750" class="p-5 col-sm-4 text-center">
             <a href="https://www.instagram.com/asme.at.uci/"  class="c-md-icon fab fa-instagram hvr-float"></a>
             <p class="pt-3">Instagram</p>
           </div>
-          <div class="animate__animated p-5 col-sm-4 text-center">
+          <div data-aos="fade-up" data-aos-duration="1000" class="p-5 col-sm-4 text-center">
               <a href="https://discord.gg/pvxJHTkduP" class="c-md-icon fab fa-discord hvr-float"></a>
               <p class="pt-3">Discord</p>
           </div>
       </div>
     </div>
 	
-    <!--Image Gallery -->
-		<img class="animate__animated mx-auto" style="display:block; position:relative; left:-17px;"  width="300px" src="images/Letters and Anteater.svg"></img>
+    
+		<img data-aos="fade-up" class="mx-auto" style="display:block; position:relative; left:-17px;"  width="300px" src="images/Letters and Anteater.svg"></img>
 
 	
     <footer style="text-align: center; width: 100%; padding-top: 100px; padding-bottom: 50px;">
-       <span>Created by Benjamen Bielecki. ASME at UCI logo designed by Noelle Camanyag. Copyright © 2021 The American Society of Mechanical Engineers, UC Irvine Chapter. All Rights Reserved.
+       <span>Website originally designed by Benjamen Bielecki. ASME at UCI logo designed by Noelle Camanyag. Copyright © 2022 The American Society of Mechanical Engineers, UC Irvine Chapter. All Rights Reserved.
          <br>"Technical Drawing" by Andrew* is licensed under CC BY-SA 2.0<span>
     </footer>
   </body>
