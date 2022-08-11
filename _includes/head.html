@@ -1,0 +1,60 @@
+<head>
+  <title>ASME @ UCI</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="/images/gears-favicon.png">
+  {%- seo -%}
+  {%- feed_meta -%}
+  {%- if jekyll.environment == 'production' and site.google_analytics -%}
+    {%- include google-analytics.html -%}
+  {%- endif -%}
+  <!--Fonts-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,700&display=swap" rel="stylesheet">
+  <!-- Bootstrap 4.5.2 -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://apis.google.com/js/api.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Custom jQuery script "custom-script.js" used to animate elements while scrolling-->
+  <script src="/scripts/custom-script.js" defer></script>
+  <!-- Custom jQuery script "custom-script.js" used to animate elements while scrolling-->
+  <script src="/scripts/calendar-updates.js" defer></script>
+  <!--Hover.css Library-->
+  <link rel="stylesheet" href="/syles/hover.css" type="text/css">
+  <!--Animate.css Library
+  WARNING: currently the animate__animated class is used with a custom script. Check the script for more info-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <!--Hover.css 2.1.1 Library
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover.css"/>-->
+  <!-- FontAwesome Icons -->
+  <script src="https://kit.fontawesome.com/84dfbe2946.js" crossorigin="anonymous"></script>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+  <!-- FullCalendar.io JS -->
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.5.1/locales-all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.5.1/main.min.js"></script>
+    <!-- FullCalendar.io CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@5.5.1/main.min.css">
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+    var calendarEl = document.getElementById('calendar');
+    var calendar = new FullCalendar.Calendar(calendarEl, {
+        initialView: 'dayGridMonth',
+      googleCalendarApiKey: 'AIzaSyBT7UEh989MTpktfCQndnRuXlssCvDxyuM',
+      events: {
+      googleCalendarId: 'fkrnncaoabqplq6ps08b01suf8@group.calendar.google.com'
+      }
+    });
+    calendar.render();
+    });
+    </script>
+  <!-- Custom Stylesheet "custom.css" used to override previous libraries-->
+  <link rel="stylesheet" href="/syles/custom.css?2" type="text/css">
+  <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+</head>
