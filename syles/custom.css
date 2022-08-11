@@ -286,7 +286,7 @@ header {
 
 
 .carousel-item-content-vertical {
-	height: auto;
+	height: 100%;
 	width: 100%;
 	display: flex;
 	flex-direction: column;
@@ -317,7 +317,7 @@ header {
 
 @media only screen and (max-width: 1500px){
 	.carousel-item-content, .carousel-item-content-vertical{
-		height: auto;
+		height: 100%;
 		width: 100%;
 		display: flex;
 		flex-direction: column;
