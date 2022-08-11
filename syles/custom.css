@@ -865,5 +865,13 @@ footer {
 */
 }
 
+.fc-scroller {
+	overflow-y: hidden !important;
+ }
+
+.fc-col-header {
+	margin-bottom: 0px;
+}
+
 /* orange: #eb6422
 red: #8f1925*/
