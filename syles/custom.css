@@ -478,6 +478,13 @@ a.c-md-icon:hover {
 	overflow:hidden;
 }
 
+.tight_pad {
+	padding-left: 3rem;
+	padding-right: 3rem;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+}
+
 @media only screen and (max-width: 1024px){
 	.calendar_wrap {
 		width: 100%;
