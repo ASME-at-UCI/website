@@ -5,9 +5,13 @@ date:   2022-07-02 11:37:06 -0700
 categories: project
 ---
 
-{% include image.html image="HPVC.png" float="left" alt_text="HPVC Logo" height="12rem" %}
+{% include image.html image="HPVC.png" float="left" alt_text="HPVC Logo" height="8rem" %}
 
 ## Meet Our Subteams!
+
+HPVC is a Senior Design Project offered at UCI and supported by ASME@UCI. The goal of HPVC is to encourage innovation among undergraduate researchers by offering a national competition at ASME's EFests. Our team is made possible by our hardworking members in our three major subteams! Come meet our Dynamics, Statics, and Electrical teams!
+
+<!--more-->
 
 ### Dynamics
 
@@ -20,6 +24,8 @@ The Statics subteam is dedicated to the structural integrity of the vehicle and 
 - Low Center of Gravity
 - Lightweight
 
+Come on down!
+
 ### Electrical
 
 The electrical subteam is in charge of powering and controlling the vehicle using motors, microcontrollers, sensors, and a Printed Circuit Board (PCB). 
@@ -28,8 +34,6 @@ The electrical subteam is in charge of powering and controlling the vehicle usin
 - Circuit Simulations in LTSpice
 - Prototype and Debug circuits
 - Make a PCB from scratch!
-
-<!--more-->
 
 ## Summertime Engineering 🌤️
 
