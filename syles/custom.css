@@ -478,7 +478,7 @@ a.c-md-icon:hover {
 	overflow:hidden;
 }
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 1024px){
 	.calendar_wrap {
 		width: 100%;
 		max-width: 100%;
