@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  "Human Powered Vehicle Competition"
-date:   2022-07-02 11:37:06 -0700
+title:  "Introducing the ASME Human Powered Vehicle Competition"
+date:   2022-07-02
 categories: project
+author: afornela
 ---
 
 {% include image.html image="HPVC.png" float="left" alt_text="HPVC Logo" height="8rem" %}

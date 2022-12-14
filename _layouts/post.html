@@ -11,7 +11,16 @@ layout: default
         {{ page.date | date: date_format }}
       </time>
       {%- if page.author -%}
-        • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
+        <!-- Look the author details up from the site config. -->
+        {% assign author = site.data.authors[page.author] %}
+
+        <!-- Output author details if some exist. -->
+        {% if author %}
+            <span>
+                <!-- Personal Info. -->
+                • Written by <a href="{{ author.web }}">{{ author.name }}</a>
+            </span>
+        {% endif %}
       {%- endif -%}</p>
   </header>
 

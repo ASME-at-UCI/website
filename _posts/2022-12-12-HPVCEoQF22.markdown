@@ -1,0 +1,56 @@
+---
+layout: post
+title:  "Human Powered Vehicle Project End of Quarter Update Fall 2022!"
+date:   2022-12-12
+categories: project
+author: sgshanno
+---
+
+{% include image.html image="HPVC/Fall22Bike.png" float="none" alt_text="HPVC Bike" height="15rem" %}
+
+## Behind the Wheels
+
+The HPVC team composes of UCI undergraduate engineers working under the American Society of Mechanical Engineers at UCI (ASME@UCI). We are a year-round senior design project participating in the annual Human Powered Vehicle Competition hosted by the national organization, American Society of Mechanical Engineers. The project starts Spring quarter and the competition in at the end Winter quarter. We welcome engineers from all backgrounds encouraging people who are driven to grow as engineers to gain crucial experience to move on to greater endeavors!
+
+<!--more-->
+
+## Purpose of the Power
+
+We are looking to build an advanced human-powered, electric bike over the course of three quarters. During Fall quater, we are looking to construct a basic prototype of the vehicle and start manufacturing and constructing the life-size bike. Winter Quarter, we are going to finish building, test, modify and race our vehicle.
+
+## Two Peas in a Pod
+
+A significant motivator for ASME and HPVC is to give lower-classmen the opportunity to gain senior design project experience. Those who can't join the lower-classmen version of this project have the opportunity to join ASME and get some hands-on experience with this project! We strongly encourage everyone to get involved wherever they can no matter what their standing is. We also understand the excitement of senior design projects and hope to give those interested the experience necessary. Simultaneously, we give the ASME seniors the opportunity to lead a smaller scale project for a more intimate engineering experience that could lead to national recognition.
+
+{%include pdf.html pdf="HPVC FINAL Presentation.pdf"%}
+
+### Sponsors Academic year 2022-2023
+
+Henry Samueli School of Engineering at UC, Irvine | ugengr@uci.edu
+David Copp | dcopp@uci.edu
+American Society of Mechanical Engineers at UCI | asme@uci.edu
+President, Anthony Chin | chinag@uci.edu
+Project Manager, Adrian Ornelas | afornela@uci.edu
+
+### Team Mates Academic year 2022-2023
+
+Anisha Jayasekara	| Dynamics	| aajayase@uci.edu
+Sophia Shannon	| Statics	| sgshanno@uci.edu
+Daniel Jang	| Dynamics	| danielhj@uci.edu
+Darren Aguilar	| Statics	| dkaguila@uci.edu
+David Lozano	| Dynamics	| lozanod2@uci.edu
+Amanda Lieng	| Electronics	| lienga@uci.edu
+Edmund Feng	| Statics	| edmundf@uci.edu
+Peter Tran	| Statics	| peternt1@uci.edu
+Kazi Hasan	| Statics	| hasanky@uci.edu
+Alejandro Plascencia	| Statics	| alplasce@uci.edu
+Phillip Choi 	| Statics	| choip5@uci.edu
+Christian Mason	| Electronics	| masonca@uci.edu
+Christian Ortiz 	| Statics	| cortizdu@uci.edu
+Gabriel Sackinger	| Statics	| gsacking@uci.edu
+Aldo Khiev	| Dynamics	| khieva@uci.edu
+Alex Ochoa	| Electronics	| ochoaaj1@uci.edu
+Alexander de Santiago	| Dynamics	| aedesant@uci.edu
+Daniel Stoll	| Dynamics	| stolld@uci.edu
+Crew Parker	Project | Management	| crewp@uci.edu
+Kaitlyn Nguyen	| Dynamics	| kaitltn3@uci.edu
