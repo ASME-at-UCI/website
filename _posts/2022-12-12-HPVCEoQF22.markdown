@@ -52,5 +52,5 @@ Aldo Khiev	| Dynamics	| khieva@uci.edu
 Alex Ochoa	| Electronics	| ochoaaj1@uci.edu
 Alexander de Santiago	| Dynamics	| aedesant@uci.edu
 Daniel Stoll	| Dynamics	| stolld@uci.edu
-Crew Parker	Project | Management	| crewp@uci.edu
+Crew Parker	| Project Management	| crewp@uci.edu
 Kaitlyn Nguyen	| Dynamics	| kaitltn3@uci.edu
