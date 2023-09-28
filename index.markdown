@@ -8,5 +8,3 @@ layout: home
 {% include carousel.html %}
 
 {% include calendar.html %}
-
-sfsdfadflka;sdlfkja;sldfkjs;ldkfj
