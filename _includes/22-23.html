@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2022-2023</title>
+    <!-- links the html page to the css page -->   
+    <link rel="stylesheet" href="22_23.css">
+</head>
+
+<body>
+
+    <h1>2022 - 2023</h1>  
+    <div class="container">     
+        <div class="grid" id="image-gallery">
+            <!-- creating columns -->
+            <div class="grid-col grid-col--1"></div>
+            <div class="grid-col grid-col--2"></div>
+            <div class="grid-col grid-col--3"></div>
+            <div class="grid-col grid-col--4"></div>
+            <div class="grid-col grid-col--5"></div>
+
+            <!--images need to do under div class of "grid-item", 
+            using JavaScript to display all images within folder (numbered)-->
+            
+            <script>
+                //images will go within "grid" div
+                var imageGallery = document.getElementById("image-gallery");
+                //array of images, pics must be numbered and saved as "jpg"
+                var imageNames = [];
+                for (var i = 0; i < 90; i++) {
+                    imageNames.push(i + ".jpg");
+                }
+
+                //loop through imageNames array
+                for (var i = 1; i < imageNames.length; i++) {
+                    var filename = imageNames[i];
+
+                    //create div element for each img
+                    var imageDiv = document.createElement("div");
+                    imageDiv.className = "grid-item";
+
+                    //create img element for each img
+                    var imgElement = document.createElement("img");
+                    imgElement.src = "pics/" + filename;
+
+                    //add img element to div element
+                    imageDiv.appendChild(imgElement);
+                    //add div element to the grid
+                    imageGallery.appendChild(imageDiv);
+                }
+            </script>
+    </div>
+
+    <!-- using colcade code, see link in document -->
+    <script src="https://unpkg.com/colcade@0/colcade.js"></script>
+    <script>
+        var colc = new Colcade( '.grid', {
+            columns: '.grid-col',
+            items: '.grid-item'
+            });
+    </script>
+
+</body>
+</html>
