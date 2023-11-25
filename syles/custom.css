@@ -536,13 +536,14 @@ a.c-md-icon:hover {
 }
 
 .navbar{
-	padding-left: 14rem;
-	padding-right: 14rem;
+	padding-left: 5rem;
+	padding-right: 5rem;
 	transition: padding 750ms;
 }
 
 
 .navbar-brand{
+
 }
 
 .nav-item{

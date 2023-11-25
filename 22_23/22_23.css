@@ -1,0 +1,66 @@
+@font-face {
+  font-family: 'Circular';
+  src: url(fonts/fonts/Gotham-Bold.otf);
+}
+
+h1 {
+  font-family: 'Circular';
+  font-size: 4vh;
+  text-align: center;
+}
+
+.container {
+  padding: 2vw;
+  padding-top: 0;
+}
+
+img {
+  width: 100%;
+  border-radius: 20px;
+  margin-bottom: 0.2em;
+}
+
+.grid {
+  display: flex;
+  gap: 1vh;
+}
+    
+/* Using floats */
+.grid-col {
+  flex: 1;
+  padding: 0, 0.1em;
+  float: left;
+  width: 50%;
+}
+    
+.logo {
+  border-radius: 0px;
+}
+
+/* 2 columns by default, hide columns 3, 4, 5 */
+.grid-col--3, .grid-col--4, .grid-col--5 { display: none }
+
+/* 3 columns at medium size */
+@media ( min-width: 960px ) {
+  .grid-col { width: 33.333%; }
+  .grid-col--2 { display: block; } /* show column 2 */
+  .grid-col--3 { display: block; } /* show column 3 */
+}
+    
+/* 4 columns at medium size */
+@media ( min-width: 1440px ) {
+  .grid-col { width: 25%; }
+  .grid-col--2 { display: block; } /* show column 2 */
+  .grid-col--3 { display: block; } /* show column 3 */
+  .grid-col--4 { display: block; } /* show column 4 */
+}
+    
+/* 5 columns at large size */
+@media ( min-width: 1920px ) {
+  .grid-col { width: 20%; }
+  .grid-col--2 { display: block; } /* show column 2 */
+  .grid-col--3 { display: block; } /* show column 3 */
+  .grid-col--4 { display: block; } /* show column 4 */
+  .grid-col--5 { display: block; } /* show column 5 */
+}
+
